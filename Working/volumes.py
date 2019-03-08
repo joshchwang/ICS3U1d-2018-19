@@ -1,20 +1,20 @@
 import math
 
-r = int(input("Please input the radius"))
-h = int(input("Please input the height"))
+radius = int(input("Please input the radius: "))
+height = int(input("Please input the height: "))
 def cylinder(r, h):
-    math.pi*r**2*h
+    cyl = math.pi*r**2*h
+    print(round(cyl, 1))
 
 def cone(r, h):
-    1/3*math.pi*r**2*h
+    con = 1/3*math.pi*r**2*h
+    print(round(con, 1))
 
 def sphere(r):
-    4/3*math.pi*r**3
-
-def main():
-    print(cylinder(r, h))
-    print(cone(r, h))
-    print(sphere(r))
+    sph = 4/3*math.pi*r**3
+    print(round(sph, 1))
 
 # Call the main function to get the program started.
-main()
+cylinder(radius, height)
+cone(radius, height)
+sphere(radius)
